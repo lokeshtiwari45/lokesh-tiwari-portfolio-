@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lokesh Tiwari | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(12px);
+    z-index:100;
+}
+
+nav h2{
+    color:#00e5ff;
+}
+
+nav a{
+    color:#ddd;
+    margin-left:25px;
+    text-decoration:none;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* Sections */
+section{
+    min-height:100vh;
+    padding:130px 60px 60px;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero span{
+    color:#00e5ff;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    color:#ddd;
+    font-size:17px;
+}
+
+/* Buttons */
+.btn{
+    padding:14px 30px;
+    border-radius:30px;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#00e5ff;
+    color:black;
+}
+
+.btn-secondary{
+    background:transparent;
+    color:#00e5ff;
+    border:2px solid #00e5ff;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:22px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    background:rgba(255,255,255,0.15);
+}
+
+.card h3{
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:rgba(0,0,0,0.6);
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Lokesh.dev</h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </div>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="hero">
+    <h1>Hi, I'm <span>Lokesh Tiwari</span></h1>
+    <p>
+        BSc Computer Applications Student | AI Video Creator | Tech Enthusiast  
+        Passionate about AI, automation, and creative digital solutions.
+    </p>
+
+    <!-- 🔽🔽 CV PDF CODE ADDED HERE 🔽🔽 -->
+    <a href="c:\Users\lokesh tiwari\Downloads\Lokesh_Tiwari_CV.pdf.pdf" download>
+        <button class="btn btn-primary">📄 Download CV</button>
+    </a>
+
+    <a href="#projects">
+        <button class="btn btn-secondary">🚀 View Projects</button>
+    </a>
+    <!-- 🔼🔼 CV PDF CODE ENDS HERE 🔼🔼 -->
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    <h2>About Me</h2>
+    <p style="margin-top:20px; max-width:800px; color:#ddd;">
+        Creative and tech-driven student with experience in AI video content creation,
+        chatbot development, and automation-based projects. I love combining creativity
+        with technology to build impactful digital solutions.
+    </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Python, C++, JavaScript, HTML, CSS</p>
+        </div>
+        <div class="card">
+            <h3>AI & Automation</h3>
+            <p>Chatbots, Prompt Engineering, OpenAI APIs</p>
+        </div>
+        <div class="card">
+            <h3>AI Video Tools</h3>
+            <p>Runway, Leonardo AI, Midjourney, CapCut, Canva</p>
+        </div>
+        <div class="card">
+            <h3>Soft Skills</h3>
+            <p>Creativity, Problem Solving, Teamwork</p>
+        </div>
+    </div>
+</section>c:\Users\lokesh tiwari\Downloads\cv lokesh (1).pdf
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Jarvis AI Assistant</h3>
+            <p>Voice & face gesture-based AI assistant using Python & OpenCV.</p>
+        </div>
+        <div class="card">
+            <h3>AI Hackathon Solution</h3>
+            <p>AI-based automation system for real-world problem solving.</p>
+        </div>
+        <div class="card">
+            <h3>AI Video Projects</h3>
+            <p>AI-generated reels, animated stories & visual content.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Lokesh Tiwari | Built with ❤️
+</footer>
+
+</body>
+</html>
